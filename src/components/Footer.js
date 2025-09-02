@@ -3,10 +3,10 @@ import small_logo from "../images/small_logo.png"
 
 const Footer = () => {
     return(
-        <footer>
+        <footer aria-label="Footer">
             <section>
             <div>
-                <img src={small_logo} />
+                <img src={small_logo} alt="Little Lemon small logo" />
             </div>
             <div>
                 <h3>Document Navigation</h3>
