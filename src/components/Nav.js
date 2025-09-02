@@ -1,17 +1,18 @@
-import React from "react";
 import littlelemon_logo from "../images/littlelemon_logo.png"
+import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
     return(
-        <nav aria-label="Primary">
+        <nav aria-label="Primary" className="primary-navigation">
+            <a className="skip-link" href="#main-content">Skip to content</a>
             <img src={littlelemon_logo} alt="Little Lemon Logo" />
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#reservations">Reservations</a></li>
-                <li><a href="#order">Order Online</a></li>
-                <li><a href="#login">Login</a></li>
+                <li><NavLink to="/">Home</NavLink></li>
+                <li><NavLink to="/about">About</NavLink></li>
+                <li><NavLink to="/menu">Menu</NavLink></li>
+                <li><NavLink to="/booking">Reservations</NavLink></li>
+                <li><NavLink to="/order">Order Online</NavLink></li>
+                <li><NavLink to="/login">Login</NavLink></li>
 
             </ul>
         </nav>

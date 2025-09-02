@@ -6,16 +6,14 @@ import { Link } from "react-router-dom";
 const Header = () => {
     return(
         <header>
-            <section>
-            <div>
+            <section className="header-content">
+            <div className="header-text">
             <h2>Little Lemon</h2>
             <h3>Chicago</h3>
             <p>We are a family owned Mediterraneran restaurant, focused on traditional recipes servred with a modern twist.</p>
-                <Link to="/booking"><button aria-label="Reserve a table">Reserve Table</button></Link>
+                <Link to="/booking" className="reserve-button" role="button" aria-label="Reserve a table">Reserve Table</Link>
             </div>
-            <div>
-                    <img src={food1} alt="A plated Mediterranean dish" />
-            </div>
+            <img src={food1} alt="A plated Mediterranean dish" />
             </section>
         </header>
     )
